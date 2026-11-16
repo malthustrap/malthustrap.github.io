@@ -3,16 +3,15 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#f4f5f7;color:#222;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
 a{color:inherit}
 .top{background:#fff;border-bottom:1px solid #ebebeb}
-.top .in{max-width:1112px;margin:0 auto;padding:12px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 16px}
+.top .in{max-width:1180px;margin:0 auto;padding:12px 16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 16px}
 .brand{text-decoration:none;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .brand b{font-size:23px;font-weight:800;color:#1e6b3a;letter-spacing:-.3px}
 .brand span{font-size:13px;color:#888}
 .nav{display:flex;gap:14px;font-size:15px}
 .nav a{text-decoration:none;color:#444;font-weight:600}
 .nav a:hover,.item a.t:hover,.near a:hover{color:#1e6b3a}
-.wrap{max-width:1112px;margin:20px auto;padding:0 16px;display:grid;grid-template-columns:320px minmax(0,1fr);gap:20px;align-items:start}
-.wrap>main{grid-column:2;grid-row:1;min-width:0}.wrap>aside{grid-column:1;grid-row:1;min-width:0}
-.one{max-width:1112px;margin:20px auto;padding:0 16px}
+.wrap{max-width:1180px;margin:20px auto;padding:0 16px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start}
+.one{max-width:880px;margin:20px auto;padding:0 16px}
 .card{background:#fff;border-radius:10px;padding:22px 24px;margin-bottom:20px}
 .card>h1,.card>h2{margin:0 0 6px;font-size:19px;line-height:1.4}
 .card>h1 small{font-size:14px;font-weight:500;color:#999;margin-left:6px}
@@ -27,8 +26,7 @@ a{color:inherit}
 .pager{display:flex;justify-content:center;align-items:center;gap:4px;white-space:nowrap;margin:18px 0 4px;font-size:16px}
 .pager a,.pager span{display:inline-block;min-width:28px;padding:5px 6px;border-radius:6px;text-decoration:none;text-align:center}
 .pager .b{background:#f2f3f5;color:#333}.pager .off{color:#bbb}.pager .on{background:#1e6b3a;color:#fff;font-weight:700}
-article.card{padding:36px 24px 28px}
-article .in{max-width:820px;margin:0 auto}
+article.card{padding:34px 28px 26px}
 .cat{font-size:14px;font-weight:700;color:#03a650;text-decoration:none}
 article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .meta{font-size:14px;color:#999;padding-bottom:16px;border-bottom:1px solid #ebebeb}
@@ -47,8 +45,8 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .near .me a{color:#1e6b3a;font-weight:800}
 .near .d{margin-top:4px;font-size:12.5px;color:#999}
 .near img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block}
-.foot{max-width:1112px;margin:10px auto 30px;padding:0 16px;font-size:13px;color:#999;text-align:center}
+.foot{max-width:1180px;margin:10px auto 30px;padding:0 16px;font-size:13px;color:#999;text-align:center}
 .foot a{color:#777}
-@media (max-width:900px){.wrap,.tail{grid-template-columns:minmax(0,1fr)}.wrap>main,.wrap>aside{grid-column:auto;grid-row:auto}}
+@media (max-width:900px){.wrap,.tail{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:380px){.item img{width:64px;height:48px}.item{gap:10px}.near img{display:none}}
 @media (max-width:600px){article.card{padding:24px 16px 20px}.card{padding:18px 16px}article h1{font-size:24px}.body{font-size:16px}.brand b{font-size:21px}}
