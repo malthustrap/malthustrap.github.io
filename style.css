@@ -48,13 +48,17 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .foot a{color:#777}
 @media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr)}}
 /* 글 화면: 900px 글(첫 줄 '…금요일 밤 미국장 마감 기준 · 손익은 실현손익(…)'이 17px 로 한 줄) + 홈과 같은 340px 흰 카드 달력.
-   둘이 나란히 들어갈 만큼 넓으면 글은 왼쪽, 달력은 오른쪽(둘을 한 덩어리로 가운데 정렬, 머리줄도 같은 폭),
-   좁으면 달력은 '이 블로그 전체글' 아래 (휴대폰과 같은 순서). */
+   넓으면 [왼쪽 여백 | 글 | 20px + 달력] 세 칸: 글은 되도록 정중앙, 달력은 글 바로 오른쪽에 붙임.
+   오른쪽 칸이 달력보다 좁아질 때만 글이 왼쪽으로 필요한 만큼 비켜남(머리줄 로고·메뉴도 글 폭에 맞춤).
+   더 좁으면 달력은 '이 블로그 전체글' 아래 (휴대폰과 같은 순서). */
 .post3{max-width:932px;margin:20px auto;padding:0 16px}
 body.pp .top .in{max-width:932px}
 @media (min-width:601px){.post3 article.card{padding:36px 24px 28px}}
-@media (min-width:1310px){.post3{max-width:1292px;display:grid;grid-template-columns:900px 340px;gap:20px;align-items:start}
-.post3>main,.post3>aside{min-width:0}
-body.pp .top .in{max-width:1292px}}
+@media (min-width:1310px){.post3,body.pp .top .in{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) 900px minmax(360px,1fr);gap:0}
+.post3{align-items:start}
+.post3>main{grid-column:2;grid-row:1;min-width:0}
+.post3>aside{grid-column:3;grid-row:1;width:340px;margin-left:20px}
+body.pp .top .brand,body.pp .top .nav{grid-column:2;grid-row:1}
+body.pp .top .nav{justify-self:end}}
 @media (max-width:380px){.item img{width:64px;height:48px}.item{gap:10px}.near img{display:none}}
 @media (max-width:600px){article.card{padding:24px 16px 20px}.card{padding:18px 16px}article h1{font-size:24px}.body{font-size:16px}.brand b{font-size:21px}}
