@@ -53,6 +53,12 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .foot{max-width:1132px;margin:10px auto 30px;padding:0 16px;font-size:13px;color:#999;text-align:center}
 .foot a{color:#777}
 .foot .disc{max-width:760px;margin:0 auto 8px;line-height:1.65}
+.pin{display:flex;align-items:center;gap:10px;margin:12px 0 2px;padding:12px 14px;border-radius:8px;background:#f1f8f3;text-decoration:none}
+.pin .badge{flex:none;font-size:12px;font-weight:700;color:#fff;background:#1e6b3a;border-radius:4px;padding:2px 7px}
+.pin .pt{flex:1;min-width:0}.pin b{display:block;font-size:15.5px;color:#1e6b3a;line-height:1.45}
+.pin small{display:block;margin-top:2px;font-size:13px;color:#666}.pin .go{flex:none;font-size:20px;color:#1e6b3a}
+.pin:hover{background:#e6f3ea}
+.body ul{margin:8px 0;padding-left:22px}.body li{margin:4px 0}
 .discl{background:#f6f7f8;border-radius:8px;padding:16px 20px;margin:8px 0 28px;font-size:14.5px;line-height:1.7;color:#444}
 .discl h2{font-size:17px;margin:0 0 8px}.discl h3{font-size:15px;margin:16px 0 4px;color:#333}.discl p{margin:6px 0}
 @media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr)}.wrap>aside{display:contents}.wrap .intro{order:-1}}
