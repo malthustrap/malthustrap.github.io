@@ -48,4 +48,5 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .foot{max-width:1180px;margin:10px auto 30px;padding:0 16px;font-size:13px;color:#999;text-align:center}
 .foot a{color:#777}
 @media (max-width:900px){.wrap,.tail{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:380px){.item img{width:64px;height:48px}.item{gap:10px}.near img{display:none}}
 @media (max-width:600px){article.card{padding:24px 16px 20px}.card{padding:18px 16px}article h1{font-size:24px}.body{font-size:16px}.brand b{font-size:21px}}
