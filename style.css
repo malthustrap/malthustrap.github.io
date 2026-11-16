@@ -54,8 +54,10 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .foot a{color:#777}
 .foot .disc{max-width:760px;margin:0 auto 8px;line-height:1.65}
 .prin h2 a{color:inherit;text-decoration:none}.prin h2 a:hover,.prin a.t:hover{color:#1e6b3a}
-.prin .pimg{display:inline-block;margin-top:10px}
-.prin .pimg img{display:block;height:130px;width:auto;max-width:100%;object-fit:contain;border:1px solid #eee;border-radius:8px}
+.prin{display:grid;grid-template-columns:1fr auto 1fr;align-items:start}.prin h2{grid-area:1/1}
+.prin .pimg{grid-area:1/2;display:block}
+.prin .pimg img{display:block;height:173px;width:auto;max-width:100%;object-fit:contain;border:1px solid #eee;border-radius:8px}
+@media (max-width:640px){.prin{display:block}.prin .pimg{width:fit-content;max-width:100%;margin:10px auto 0}.prin .pimg img{height:auto;width:300px}}
 .body ul{margin:8px 0;padding-left:22px}.body li{margin:4px 0}
 .discl{background:#f6f7f8;border-radius:8px;padding:16px 20px;margin:8px 0 28px;font-size:14.5px;line-height:1.7;color:#444}
 .discl h2{font-size:17px;margin:0 0 8px}.discl h3{font-size:15px;margin:16px 0 4px;color:#333}.discl p{margin:6px 0}
