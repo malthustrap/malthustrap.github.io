@@ -38,7 +38,6 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .postnav{display:flex;justify-content:space-between;gap:16px;margin-top:26px;padding-top:14px;border-top:1px solid #ebebeb;font-size:15px}
 .postnav a{text-decoration:none;color:#1e6b3a;font-weight:600;max-width:48%}
 .postnav .r{text-align:right;margin-left:auto}
-.tail{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start}
 .near .row{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #eee}
 .near .me{margin:4px -12px;padding:12px;border-radius:8px;background:#eaf8ef;border:0}
 .near a{display:block;font-size:15.5px;font-weight:700;text-decoration:none;line-height:1.45}
@@ -47,6 +46,7 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .near img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block}
 .foot{max-width:1180px;margin:10px auto 30px;padding:0 16px;font-size:13px;color:#999;text-align:center}
 .foot a{color:#777}
-@media (max-width:900px){.wrap,.tail{grid-template-columns:minmax(0,1fr)}}
+.wrap.left{grid-template-columns:340px minmax(0,1fr)}.wrap.left>main{grid-column:2;grid-row:1;min-width:0}.wrap.left>aside{grid-column:1;grid-row:1;min-width:0}
+@media (max-width:900px){.wrap,.wrap.left{grid-template-columns:minmax(0,1fr)}.wrap.left>main,.wrap.left>aside{grid-column:auto;grid-row:auto}}
 @media (max-width:380px){.item img{width:64px;height:48px}.item{gap:10px}.near img{display:none}}
 @media (max-width:600px){article.card{padding:24px 16px 20px}.card{padding:18px 16px}article h1{font-size:24px}.body{font-size:16px}.brand b{font-size:21px}}
