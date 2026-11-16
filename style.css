@@ -47,13 +47,14 @@ article h1{font-size:28px;font-weight:800;line-height:1.38;margin:6px 0 10px}
 .foot{max-width:1132px;margin:10px auto 30px;padding:0 16px;font-size:13px;color:#999;text-align:center}
 .foot a{color:#777}
 @media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr)}}
-/* 글 화면: 글은 늘 화면 정중앙(848px 카드). 왼쪽 빈 공간에 달력이 들어갈 만큼 넓으면 거기에 흰 카드 달력,
-   좁으면 달력은 '이 블로그 전체글' 아래 (휴대폰과 같은 순서). */
-.post3{max-width:880px;margin:20px auto;padding:0 16px}
-@media (min-width:1360px){.post3{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) 848px minmax(0,1fr);gap:20px;align-items:start}
+/* 글 화면: 글은 늘 화면 정중앙(900px 카드: 첫 줄 '…금요일 밤 미국장 마감 기준 · 손익은 실현손익(…)'이 17px 로 한 줄).
+   오른쪽 빈 공간에 달력이 들어갈 만큼 넓으면 거기에 흰 카드 달력, 좁으면 달력은 '이 블로그 전체글' 아래 (휴대폰과 같은 순서). */
+.post3{max-width:932px;margin:20px auto;padding:0 16px}
+@media (min-width:601px){.post3 article.card{padding:36px 24px 28px}}
+@media (min-width:1380px){.post3{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) 900px minmax(0,1fr);gap:16px;align-items:start}
 .post3>main{grid-column:2;grid-row:1;min-width:0}
-.post3>aside{grid-column:1;grid-row:1;justify-self:end;width:min(340px,100%);min-width:0}
-.post3 .side-cal{padding:16px 10px;container-type:inline-size}}
+.post3>aside{grid-column:3;grid-row:1;justify-self:start;width:min(340px,100%);min-width:0}
+.post3 .side-cal{padding:16px 8px;container-type:inline-size}}
 @container (max-width:300px){.side-cal td{padding:1px!important;height:40px!important}
 .side-cal td span[style*="font-size:11px"]{font-size:9px!important;letter-spacing:-.5px}
 .side-cal table{font-size:12px!important}.side-cal summary{font-size:14px!important}
